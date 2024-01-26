@@ -1,18 +1,18 @@
 {
-  "name": "node-js-with-express",
-  "version": "1.0.0",
-  "description": "haha",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Hua Wang",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.3"
-  }
+    "name": "node-js-with-express",
+    "version": "1.0.0",
+    "description": "haha",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "Hua Wang",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.3"
+    }
 }

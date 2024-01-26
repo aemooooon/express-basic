@@ -19,7 +19,4 @@ app.use((req, res, next) => {
 // using routes
 app.use("/api/v1/movies", moviesRouter);
 
-const port = 3000;
-app.listen(port, () => {
-    console.log("Server has started.");
-});
+module.exports = app;

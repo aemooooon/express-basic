@@ -2,7 +2,11 @@ const express = require("express");
 const moviesController = require("./../Controllers/moviesController");
 
 const router = express.Router();
-router.route("/").get(moviesController.getAllMovies).post(moviesController.createMovie);
+
+router.param("id", moviesController.checkId);
+
+router.route("/").get(moviesController.getAllMovies).post(moviesController.validateBody, moviesController.createMovie);
+
 router
     .route("/:id")
     .get(moviesController.getMovie)
